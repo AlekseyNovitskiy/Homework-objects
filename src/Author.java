@@ -3,12 +3,10 @@ public class Author {
     private String firstName;
     private String secondName;
 
-    public Author(String name) {
-        String[] fullName = name.split(" ");
-        if (fullName.length == 2) {
-            this.firstName = fullName[0];
-            this.secondName = fullName[1];
-        }
+    public Author(String firstName1,String secondName1) {
+            this.firstName = firstName1;
+            this.secondName = secondName1;
+
     }
     public String getFirstName() {
         return (this.firstName);

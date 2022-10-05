@@ -5,10 +5,10 @@ public class Book {
     private int year;
 
 
-    public Book(String name, int year, String nameAuthor) {
+    public Book(String name, int year, Author nameAuthor) {
         this.name=name;
         this.year=year;
-        this.author=new Author(nameAuthor);
+        this.author = nameAuthor;
     }
     public String getName() {
         return this.name;
@@ -17,12 +17,9 @@ public class Book {
         return this.year;
     }
 
-    public Author getAuthor() {
-        return (this.author);
-    }
-
-    public String getAuthorName() {
+    public String getAuthor() {
         return (this.author.getFirstName() + " " + this.author.getSecondName());
+
     }
     public void setYear (int year){
         this.year = year;
